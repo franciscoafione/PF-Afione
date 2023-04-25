@@ -1,0 +1,31 @@
+$color-1: white;
+$color-2: rgb(191, 190, 190);
+$color-3: rgba(89, 177, 239, 0.839);
+$color-4: rgb(220, 53, 69);
+
+section{
+    
+    padding: 3em;
+    text-align: center;
+    
+    h2{
+        padding-bottom: 1rem;
+    }
+}
+
+.descripcion {
+    background-color: $color-1;
+    color: black;
+}
+
+.seccion1{
+    background-color: $color-2;
+    color: white;
+}
+
+.seccion2{
+    background-color: $color-3;
+    color: white;
+}
+
+
