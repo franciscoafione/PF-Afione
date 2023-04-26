@@ -31,7 +31,12 @@ section h2 {
   color: white;
 }
 
-.carrusel {
+.seccion3 {
+  background-color: rgb(220, 53, 69);
+  color: white;
+}
+
+.carousel {
   padding-bottom: 0%;
   padding-top: 0%;
   padding-left: 0%;
@@ -43,9 +48,50 @@ section h2 {
   background-position: center;
 }
 
+.portada-lenguaje {
+  background-image: url("../img/partituras.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+  color: azure;
+}
+
+.portada-guitarra {
+  background-image: url("../img/guitarra-cortada.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+  color: azure;
+}
+
+.portada-piano {
+  background-image: url("../img/piano1.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+  color: azure;
+  background-size: contain;
+}
+
+.guitarra, .piano, .lenguaje-musical {
+  padding-top: 0%;
+  padding-bottom: 3%;
+}
+
 #fotoPortada {
   width: 100%;
   height: fit-content;
+}
+
+#composiciones section {
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+#composiciones .descripcion {
+  padding-top: 3em;
 }
 
 /*# sourceMappingURL=styles.css.map */
