@@ -1,14 +1,14 @@
 $color-1: white;
-$color-2: rgb(191, 190, 190);
-$color-3: rgba(89, 177, 239, 0.839);
-$color-4: rgb(220, 53, 69);
+$color-2: #bfbebe;
+$color-3: #59b1efd6;
+$color-4: #dc3545;
 
-section{
-    
+section {
+
     padding: 3em;
     text-align: center;
-    
-    h2{
+
+    h2 {
         padding-bottom: 1rem;
     }
 }
@@ -18,17 +18,62 @@ section{
     color: black;
 }
 
-.seccion1{
+.seccion1 {
     background-color: $color-2;
     color: white;
 }
 
-.seccion2{
+.seccion2 {
     background-color: $color-3;
     color: white;
 }
 
-.seccion3{
+.seccion3 {
     background-color: $color-4;
     color: white;
+}
+
+.transicion1 {
+    background: $color-2;
+    background: linear-gradient(180deg, $color-2 39%, $color-3);
+
+    width: 100%;
+    height: 100px;
+
+    text-align: center;
+    justify-content: center;
+
+    p{
+        padding-bottom: 5%;
+    }
+}
+
+.transicion2 {
+    background: $color-3;
+    background: linear-gradient(180deg, $color-3 39%, $color-4);
+
+    width: 100%;
+    height: 100px;
+
+    text-align: center;
+    justify-content: center;
+
+    p{
+        padding-bottom: 5%;
+    }
+}
+
+.transicionNegro {
+    background: $color-3;
+    background: linear-gradient(180deg, $color-3 39%, black);
+
+    width: 100%;
+    height: 100px;
+
+    text-align: center;
+    justify-content: center;
+
+    p{
+        padding-bottom: 5%;
+    }
 }
