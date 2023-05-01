@@ -5,9 +5,16 @@
 }
 
 header {
-  background-color: rgb(0, 149, 255);
+  background-color: #0095ff;
 }
 
+/*
+$color-0: white;
+$color-1: #265A80;
+$color-2: #0095FF;
+$color-3: #4DB5FF;
+$color-4: #004A80;
+*/
 /*
 $color-0: #32c2b9;
 $color-1: #edecb3;
@@ -27,34 +34,43 @@ section h2 {
   background-color: white;
   color: black;
 }
+.descripcion h2 {
+  font-weight: 400;
+}
 
 .seccion1 {
-  background-color: #72bca5;
+  background-color: #D95032;
   color: white;
 }
-.seccion1 img, .seccion1 iframe {
-  border-radius: 3%;
+@media (min-width: 768px) {
+  .seccion1 img, .seccion1 iframe {
+    border-radius: 3%;
+  }
 }
 
 .seccion2 {
-  background-color: rgba(89, 177, 239, 0.8392156863);
+  background-color: #F2A25C;
   color: white;
 }
-.seccion2 img, .seccion2 iframe {
-  border-radius: 3%;
+@media (min-width: 768px) {
+  .seccion2 img, .seccion2 iframe {
+    border-radius: 3%;
+  }
 }
 
 .seccion3 {
-  background-color: #405059;
+  background-color: #88C1F2;
   color: white;
 }
-.seccion3 img, .seccion3 iframe {
-  border-radius: 3%;
+@media (min-width: 768px) {
+  .seccion3 img, .seccion3 iframe {
+    border-radius: 3%;
+  }
 }
 
 .transicion0 {
   background: white;
-  background: linear-gradient(180deg, white 39%, #72bca5);
+  background: linear-gradient(180deg, white 39%, #D95032);
   width: 100%;
   height: 60px;
   text-align: center;
@@ -62,8 +78,8 @@ section h2 {
 }
 
 .transicion1 {
-  background: #72bca5;
-  background: linear-gradient(180deg, #72bca5 39%, rgba(89, 177, 239, 0.8392156863));
+  background: #D95032;
+  background: linear-gradient(180deg, #D95032 39%, #F2A25C 70%);
   width: 100%;
   height: 60px;
   text-align: center;
@@ -74,8 +90,8 @@ section h2 {
 }
 
 .transicion2 {
-  background: rgba(89, 177, 239, 0.8392156863);
-  background: linear-gradient(180deg, rgba(89, 177, 239, 0.8392156863) 39%, #405059 70%);
+  background: #F2A25C;
+  background: linear-gradient(180deg, #F2A25C 39%, #88C1F2 70%);
   width: 100%;
   height: 60px;
   text-align: center;
@@ -132,7 +148,6 @@ section h2 {
 h2 {
   font-size: 30px;
   font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5568627451);
 }
 
 #fotoPortada {
@@ -152,7 +167,6 @@ h2 {
 }
 #flyersClases img {
   object-fit: cover;
-  border-radius: 4%;
 }
 
 #composiciones section {
