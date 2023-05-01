@@ -1,7 +1,22 @@
-$color-1: white;
-$color-2: #bfbebe;
-$color-3: #59b1efd6;
-$color-4: #dc3545;
+
+$color-0: white;
+$color-1: #72bca5;
+$color-2: #59b1efd6;
+$color-3: #405059;
+
+/*
+$color-0: #32c2b9;
+$color-1: #edecb3;
+$color-2: #fad928;
+$color-3: #ff9915;
+$color-4: #686466;
+*/
+$bordes: 3%;
+
+
+
+//$color-4: #dc3545;
+$color-4: rgb(43, 166, 133);
 
 section {
 
@@ -14,66 +29,76 @@ section {
 }
 
 .descripcion {
-    background-color: $color-1;
+    background-color: $color-0;
     color: black;
 }
 
 .seccion1 {
-    background-color: $color-2;
+    //background-color: $color-2;
+    background-color: $color-1;
     color: white;
+
+    img, iframe {
+        border-radius: $bordes;
+    }
+
 }
 
 .seccion2 {
-    background-color: $color-3;
+    background-color: $color-2;
     color: white;
+
+    img, iframe {
+        border-radius: $bordes;
+    }
 }
 
 .seccion3 {
-    background-color: $color-4;
+    background-color: $color-3;
     color: white;
+
+    img, iframe {
+        border-radius: $bordes;
+    }
+}
+
+.transicion0{
+    background: $color-0;
+    background: linear-gradient(180deg, $color-0 39%, $color-1);
+
+    width: 100%;
+    height: 60px;
+
+    text-align: center;
+    justify-content: center;
 }
 
 .transicion1 {
-    background: $color-2;
-    background: linear-gradient(180deg, $color-2 39%, $color-3);
+    background: $color-1;
+    background: linear-gradient(180deg, $color-1 39%, $color-2);
 
     width: 100%;
-    height: 100px;
+    height: 60px;
 
     text-align: center;
     justify-content: center;
 
-    p{
+    p {
         padding-bottom: 5%;
     }
 }
 
 .transicion2 {
-    background: $color-3;
-    background: linear-gradient(180deg, $color-3 39%, $color-4);
+    background: $color-2;
+    background: linear-gradient(180deg, $color-2 39%, $color-3 70%);
 
     width: 100%;
-    height: 100px;
+    height: 60px;
 
     text-align: center;
     justify-content: center;
 
-    p{
-        padding-bottom: 5%;
-    }
-}
-
-.transicionNegro {
-    background: $color-3;
-    background: linear-gradient(180deg, $color-3 39%, black);
-
-    width: 100%;
-    height: 100px;
-
-    text-align: center;
-    justify-content: center;
-
-    p{
+    p {
         padding-bottom: 5%;
     }
 }

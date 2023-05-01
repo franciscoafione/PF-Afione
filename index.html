@@ -43,7 +43,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="PaginaPrincipal">
 
     <section id="carouselPaginaPrincipal" class="container-fluid carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -83,6 +83,8 @@
           panoramica de los instrumentos y la musica en general.</p>
       </div>
     </section>
+
+    <div class="transicion0"></div>
 
     <section id="youtube" class="seccion1 container-fluid">
       <h2>Youtube</h2>
@@ -125,7 +127,7 @@
           <div class="col-md-6">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.76448038683!2d-68.06108763597787!3d-38.95220857136843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d1d086e253%3A0xc23a0e78a6cc600c!2sMonumento%20a%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1681583684393!5m2!1ses!2sar"
-              width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy"
+              width="100%" height="525" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -135,12 +137,17 @@
 
     <div class="transicion2"></div>
 
-    <section class="seccion3 container-fluid">
+    <section id="flyersClases" class="seccion3 container-fluid">
       <h2>Aprende a tocar la guitarra & el piano!</h2>
       <div class="container-md">
         <div class="row">
-          <img class="col-12 col-md-6 pb-4 pb-md-0" src="./img/Clases de guitarra.jpg" alt="">
-          <img class="col-12 col-md-6" src="./img/Clases de piano.jpg" alt="">
+          <div class="col-12 col-md-6 pb-4 pb-md-0  col-lg-4 offset-lg-1">
+            <img class="img-fluid" src="./img/Clases de guitarra.jpg" alt="">
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <img class="img-fluid" src="./img/Clases de piano.jpg" alt="">
+          </div>
         </div>
       </div>
     </section>
