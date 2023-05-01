@@ -1,23 +1,8 @@
-/*
-$color-0: white;
-$color-1: #265A80;
-$color-2: #0095FF;
-$color-3: #4DB5FF;
-$color-4: #004A80;
-*/
-$color-0: white;
-$color-1: #D95032;
-$color-2: #F2A25C;
-//$color-3: #F2AC57;
-$color-3: #88C1F2;
 
-/*
-$color-0: #32c2b9;
-$color-1: #edecb3;
-$color-2: #fad928;
-$color-3: #ff9915;
-$color-4: #686466;
-*/
+$color-0: #000000;
+$color-1: #003A70;
+$color-2: #065778;
+$color-3: #005961;
 
 $bordes: 3%;
 
@@ -38,44 +23,30 @@ section {
 
 .descripcion {
     background-color: $color-0;
-    color: black;
+    color: white;
     h2{
         font-weight: 400;
     }
 }
 
-.seccion1 {
-    background-color: $color-1;
+
+$section-colors: (
+  seccion1: $color-1,
+  seccion2: $color-2,
+  seccion3: $color-3
+);
+
+@each $section, $color in $section-colors {
+  .#{$section} {
+    background-color: $color;
     color: white;
 
-    @media(min-width:768px){
-        img, iframe {
-            border-radius: $bordes;
-        }
+    @media(min-width: 768px) {
+      img, iframe {
+        border-radius: $bordes;
+      }
     }
-    
-}
-
-.seccion2 {
-    background-color: $color-2;
-    color: white;
-
-    @media(min-width:768px){
-        img, iframe {
-            border-radius: $bordes;
-        }
-    }
-}
-
-.seccion3 {
-    background-color: $color-3;
-    color: white;
-
-    @media(min-width:768px){
-        img, iframe {
-            border-radius: $bordes;
-        }
-    }
+  }
 }
 
 .transicion0{
