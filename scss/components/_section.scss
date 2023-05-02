@@ -1,5 +1,5 @@
 
-$color-0: #000000;
+$color-0: #000a12;
 $color-1: #003A70;
 $color-2: #065778;
 $color-3: #005961;
@@ -24,6 +24,9 @@ section {
 .descripcion {
     background-color: $color-0;
     color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    
     h2{
         font-weight: 400;
     }
