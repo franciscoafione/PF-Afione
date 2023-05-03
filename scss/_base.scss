@@ -1,4 +1,23 @@
 //Variables
+$color-0: #000a12;
+$color-1: #003A70;
+$color-2: #065778;
+$color-3: #005961;
+$color-4: #2ba685;
+
+$bordes: 3%;
+
+$section-colors: (
+  seccion1: $color-1,
+  seccion2: $color-2,
+  seccion3: $color-3
+);
+
+$portadas: (
+  "lenguaje": "../img/partituras.jpg",
+  "guitarra": "../img/guitarra-cortada.jpg",
+  "piano": "../img/piano1.jpg"
+);
 
 
 *{

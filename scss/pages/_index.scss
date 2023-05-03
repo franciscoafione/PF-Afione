@@ -1,4 +1,3 @@
-
 #fotoPortada {
     width: 100%;
     height: fit-content;
@@ -11,3 +10,24 @@
     }
 }
 
+#flyers {
+
+    img,
+    iframe {
+        height: 510px;
+        width: 75%;
+        padding-bottom: 2em;
+    }
+
+    @media(min-width: 768px) {
+        img {
+            width: 400px;
+            height: 525px;
+        }
+
+        iframe {
+            width: "100%";
+            height: "525";
+        }
+    }
+}

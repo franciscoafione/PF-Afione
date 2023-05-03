@@ -1,10 +1,4 @@
 
-$portadas: (
-  "lenguaje": "../img/partituras.jpg",
-  "guitarra": "../img/guitarra-cortada.jpg",
-  "piano": "../img/piano1.jpg"
-);
-
 @each $portada, $imagen in $portadas {
   .portada-#{$portada} {
     background-image: url("#{$imagen}");

@@ -153,9 +153,29 @@ h2 {
   object-fit: cover;
 }
 
+#flyers img,
+#flyers iframe {
+  height: 510px;
+  width: 75%;
+  padding-bottom: 2em;
+}
+@media (min-width: 768px) {
+  #flyers img {
+    width: 400px;
+    height: 525px;
+  }
+  #flyers iframe {
+    width: "100%";
+    height: "525";
+  }
+}
+
 #composiciones .seccion1, #composiciones .seccion2, #composiciones .seccion3 {
   padding-top: 0;
   padding-bottom: 1em;
+}
+#composiciones img {
+  margin-bottom: 1em;
 }
 
 #materialAudiovisual ul {
@@ -176,6 +196,9 @@ h2 {
 #materialDidactico .descripcion {
   padding-top: 5em;
   padding-bottom: 5em;
+}
+#materialDidactico img {
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

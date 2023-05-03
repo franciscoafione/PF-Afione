@@ -1,16 +1,4 @@
 
-$color-0: #000a12;
-$color-1: #003A70;
-$color-2: #065778;
-$color-3: #005961;
-
-$bordes: 3%;
-
-
-
-//$color-4: #dc3545;
-$color-4: rgb(43, 166, 133);
-
 section {
 
     padding: 3em;
@@ -32,12 +20,6 @@ section {
     }
 }
 
-
-$section-colors: (
-  seccion1: $color-1,
-  seccion2: $color-2,
-  seccion3: $color-3
-);
 
 @each $section, $color in $section-colors {
   .#{$section} {
