@@ -163,6 +163,9 @@ h2 {
 #flyers img, #flyers iframe {
   object-fit: cover;
 }
+#flyers iframe {
+  height: 100%;
+}
 
 #composiciones .seccion1, #composiciones .seccion2, #composiciones .seccion3 {
   padding-top: 0;
@@ -181,6 +184,9 @@ h2 {
 #materialAudiovisual iframe {
   height: 315px;
   width: 560px;
+}
+#materialAudiovisual h3 {
+  font-size: 1.5em;
 }
 
 #materialDidactico .seccion1, #materialDidactico .seccion2, #materialDidactico .seccion3 {
