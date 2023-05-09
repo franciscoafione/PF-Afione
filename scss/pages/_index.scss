@@ -11,23 +11,7 @@
 }
 
 #flyers {
-
-    img,
-    iframe {
-        height: 510px;
-        width: cover;
-        padding-bottom: 2em;
-    }
-
-    @media(min-width: 768px) {
-        img {
-            width: 400px;
-            height: 525px;
-        }
-
-        iframe {
-            width: "100%";
-            height: "525";
-        }
+    img, iframe {
+        object-fit: cover;
     }
 }

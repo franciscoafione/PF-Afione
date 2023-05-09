@@ -1,3 +1,10 @@
+/*
+$color-0: #000a12;
+$color-1: #002f5c;
+$color-2: #065778;
+$color-3: #005961;
+$color-4: #2ba685;
+*/
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +45,7 @@ section h2 {
 }
 
 .seccion1 {
-  background-color: #003A70;
+  background-color: #00284d;
   color: white;
 }
 @media (min-width: 768px) {
@@ -48,7 +55,7 @@ section h2 {
 }
 
 .seccion2 {
-  background-color: #065778;
+  background-color: #05455e;
   color: white;
 }
 @media (min-width: 768px) {
@@ -69,7 +76,7 @@ section h2 {
 
 .transicion0 {
   background: #000a12;
-  background: linear-gradient(180deg, #000a12 39%, #003A70);
+  background: linear-gradient(180deg, #000a12 39%, #00284d);
   width: 100%;
   height: 60px;
   text-align: center;
@@ -77,8 +84,8 @@ section h2 {
 }
 
 .transicion1 {
-  background: #003A70;
-  background: linear-gradient(180deg, #003A70 39%, #065778 70%);
+  background: #00284d;
+  background: linear-gradient(180deg, #00284d 39%, #05455e 70%);
   width: 100%;
   height: 60px;
   text-align: center;
@@ -89,8 +96,8 @@ section h2 {
 }
 
 .transicion2 {
-  background: #065778;
-  background: linear-gradient(180deg, #065778 39%, #005961 70%);
+  background: #05455e;
+  background: linear-gradient(180deg, #05455e 39%, #005961 70%);
   width: 100%;
   height: 60px;
   text-align: center;
@@ -153,21 +160,8 @@ h2 {
   object-fit: cover;
 }
 
-#flyers img,
-#flyers iframe {
-  height: 510px;
-  width: 75%;
-  padding-bottom: 2em;
-}
-@media (min-width: 768px) {
-  #flyers img {
-    width: 400px;
-    height: 525px;
-  }
-  #flyers iframe {
-    width: "100%";
-    height: "525";
-  }
+#flyers img, #flyers iframe {
+  object-fit: cover;
 }
 
 #composiciones .seccion1, #composiciones .seccion2, #composiciones .seccion3 {
