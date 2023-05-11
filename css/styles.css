@@ -160,21 +160,27 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: filter 0.5s ease;
 }
-.box-hover .img-hover {
-  width: 0%;
-  height: 0vh;
-  background-color: rgba(56, 53, 53, 0.568);
+.box-hover .tittle-hover {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  overflow: hidden;
-}
-.box-hover .img-hover h3 {
+  top: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: width 0.5s ease;
   color: aliceblue;
   text-shadow: 1px 1px 1px black;
   font-size: 2.5em;
+  visibility: hidden;
 }
-.box-hover:hover .img-hover {
-  width: 100%;
+.box-hover:hover img {
+  filter: brightness(40%);
+}
+.box-hover:hover .tittle-hover {
+  visibility: visible;
 }
 
 #fotoPortada {
@@ -215,7 +221,9 @@ h2 {
   font-size: 1.5em;
 }
 
-#materialDidactico .seccion1, #materialDidactico .seccion2, #materialDidactico .seccion3 {
+#materialDidactico .seccion1,
+#materialDidactico .seccion2,
+#materialDidactico .seccion3 {
   padding-top: 0%;
   padding-bottom: 3%;
 }
@@ -228,6 +236,12 @@ h2 {
 }
 #materialDidactico #lenguajeMusical img {
   padding: 2em;
+}
+#materialDidactico h2 {
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.905);
+}
+#materialDidactico h3 {
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,30 +1,39 @@
-.box-hover{
+.box-hover {
     text-align: center;
     overflow: hidden;
     position: relative;
 
-    img{
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: filter 0.5s ease;
     }
 
-    .img-hover {
-        width: 0%;
-        height: 0vh;
-        background-color: rgba(56, 53, 53, 0.568);
-        position: absolute;
-        overflow: hidden;
-    
-        h3 {
-            color: aliceblue;
-            text-shadow: 1px 1px 1px black;
-            font-size: 2.5em;
-    
-        }
-    }
-
-    &:hover .img-hover{
+    .tittle-hover {
         width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: width 0.5s ease;
+
+        color: aliceblue;
+        text-shadow: 1px 1px 1px black;
+        font-size: 2.5em;
+
+        visibility: hidden;
+    }
+
+    &:hover {
+        img {
+            filter: brightness(40%);
+        }
+
+        .tittle-hover{
+            visibility: visible;
+        }
     }
 }
