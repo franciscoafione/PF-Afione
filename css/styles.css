@@ -151,6 +151,32 @@ h2 {
   font-weight: 700;
 }
 
+.box-hover {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.box-hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box-hover .img-hover {
+  width: 0%;
+  height: 0vh;
+  background-color: rgba(56, 53, 53, 0.568);
+  position: absolute;
+  overflow: hidden;
+}
+.box-hover .img-hover h3 {
+  color: aliceblue;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2.5em;
+}
+.box-hover:hover .img-hover {
+  width: 100%;
+}
+
 #fotoPortada {
   width: 100%;
   height: fit-content;
@@ -199,6 +225,9 @@ h2 {
 }
 #materialDidactico img {
   margin-bottom: 1em;
+}
+#materialDidactico #lenguajeMusical img {
+  padding: 2em;
 }
 
 /*# sourceMappingURL=styles.css.map */
