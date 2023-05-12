@@ -118,6 +118,27 @@ section h2 {
   background-position: center;
 }
 
+/* Center the iframe horizontally */
+.carousel-inner iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Adjust the iframe height to fit the carousel height */
+.carousel-inner .iframe-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.carousel-inner .iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .portada-lenguaje {
   background-image: url("../img/partituras.jpg");
   background-size: cover;
@@ -213,9 +234,17 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
-#materialAudiovisual iframe {
-  height: 315px;
-  width: 560px;
+@media (max-width: 768px) {
+  #materialAudiovisual iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  #materialAudiovisual iframe {
+    width: 560px;
+    height: 335px;
+  }
 }
 #materialAudiovisual h3 {
   font-size: 1.5em;
@@ -233,9 +262,6 @@ h2 {
 }
 #materialDidactico img {
   margin-bottom: 1em;
-}
-#materialDidactico #lenguajeMusical img {
-  padding: 2em;
 }
 #materialDidactico h2 {
   text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.905);
